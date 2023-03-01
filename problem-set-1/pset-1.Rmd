@@ -1,6 +1,6 @@
 ---
 title: "Taller de R: Estadística y Programación"
-date: '01/09/2022'
+date: '01/03/2023'
 pagetitle: "Taller 1"
 output:
        pdf_document: default
@@ -21,9 +21,9 @@ En este taller se evalúan los temas vistos en las clases 1 a 6 del curso. Lea a
 ```
 -   Este taller pesa el **30%** de la nota total del curso y podrá responderlo de manera individual o en grupo de hasta 3 personas. En las primeras líneas del script debe escribir su nombre, código y la versión de R sobre la que está trabajando. Además, al inicio del código debe llamar/instalar las librerías que va a usar en la sesión. Por ejemplo: `pacman`, `rio` y `tidyverse` (a lo menos).
 
--   Recuerde hacer fork sobre el repositorio [https://github.com/taller-r-202301/pset-1](https://github.com/taller-r-202202/pset-1){.uri} para que cree una versión del repositorio en su cuenta de GitHub. Si va a trabajar en grupo, solo 1 integrante del grupo debe hacer fork del repositorio y compartir el acceso a los demás integrantes. Este repositorio debe incluir a lo menos tres carpetas: `input` (datos originales), `output` (datos procesados) y `code` (script con la respuesta del taller).
+-   Recuerde crear un proyecto de R. Este proyecto debe incluir a lo menos tres carpetas: `input` (datos originales), `output` (datos procesados) y `code` (script con la respuesta del taller).
 
--   Deberá colgar en Bloque Neón el link al repositorio de GitHub antes de las 23:59 horas del 18 de septiembre de 2022.
+-   **Cada integrante** del grupo deberá colgar en Bloque Neón el script del proyecto antes de las 23:59 horas del **20 de marzo de 2023**.
 
 -   Por favor sea lo más organizado posible y comente paso a paso cada línea de código, pero recuerden **NO** usar ningún acento o carácter especial dentro del código para evitar problemas al abrir los scripts en los diferentes sistemas operativos.
 
@@ -40,7 +40,7 @@ Cree un vector que contenga los números del 1 al 100, posteriormente cree otro 
 
 # 2. Importar/exportar bases de datos
 
-Los siguientes puntos se llevaran a cabo con la [Encuesta de Micronegocios- 2021](https://microdatos.dane.gov.co/index.php/catalog/742/get-microdata), la cual se enfoca en las empresas que desarrollan una actividad económica con un máximo de 9 personas ocupadas. El diccionario de datos lo encontrara virtual en el portal del [DANE](https://microdatos.dane.gov.co/index.php/catalog/742/data-dictionary) o lo podrá descargar en formato [pdf](https://microdatos.dane.gov.co/index.php/catalog/742/download/21404).
+Los siguientes puntos se llevarán a cabo con la [Encuesta de Micronegocios- 2021](https://microdatos.dane.gov.co/index.php/catalog/742/get-microdata), la cual se enfoca en las empresas que desarrollan una actividad económica con un máximo de 9 personas ocupadas. El diccionario de datos lo encontrará virtual en el portal del [DANE](https://microdatos.dane.gov.co/index.php/catalog/742/data-dictionary) o lo podrá descargar en formato [pdf](https://microdatos.dane.gov.co/index.php/catalog/742/download/21404).
 
 ## 2.1 Importar
 
@@ -52,7 +52,7 @@ Exporte a la carpeta output los objetos cargados en el punto anterior, guárdelo
 
 # 3. Generar variables
 
--   Sobre el objeto que contiene la base `Identificación`, genere una variable que sera igual a: **Agricultura** cuando sea **igual a 1**, **Industria manufacturera** cuando sea **igual a 2**, **comercio** cuando sea **igual a 3** y servicios cuando sea **igual a 4**. a esta variable le llamara `bussiness_type`.
+-   Sobre el objeto que contiene la base `Identificación`, genere una variable que será igual a: **Agricultura** cuando sea **igual a 1**, **Industria manufacturera** cuando sea **igual a 2**, **comercio** cuando sea **igual a 3** y servicios cuando sea **igual a 4**. a esta variable le llamara `bussiness_type`.
 -   Sobre el objeto que contiene la `Ubicación`, genere una variable llamada `local`, que sea igual a 1 si la variable `P3053` es igual a 6 o 7.
 
 # 4. Eliminar filas/columnas de un conjunto de datos
@@ -68,3 +68,4 @@ Use las variables `DIRECTORIO`, `SECUENCIA_P` y `SECUENCIA_ENCUESTA` para unir e
 # 6. Descriptivas de un conjunto de datos: ¿Cómo varió el número de ocupados del mes de Enero al mes de Febrero?
 
 Use las funciones `ggplot()`, `group_by()` y `summarize()` entre otras, para generar algunas estadísticas descriptivas (gráficos y tablas). Tenga en cuenta algunas dimensiones como departamento, sexo y edad. Las tablas las puede plotear sobre la consola, pero los gráficos los debe exportar en formato `.jpeg` a la carpeta \textit{output}. Debe generar mínimo 3 gráficos y 3 tablas.
+
