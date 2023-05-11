@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = T , eval = T , warning = T)
 ```
 
-En este taller se evalúan los temas vistos en las clases 1 a 6 del curso. Lea atentamente las instrucciones del taller.
+En este taller se evalúan los temas vistos en las clases 1 a 9 del curso. Lea atentamente las instrucciones del taller.
 
 <!----------------------------------------------------------------------------->
 
